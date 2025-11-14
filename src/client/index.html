@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Timesheet System</title>
+    <style>
+    
+        body { 
+            font-family: Arial; 
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+  
+        .timeentry-form {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .time_entry_list {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Timesheet System</h1>
+        <p>Track your time entries</p>
+    </div>
+    
+    <div class="container">
+        <div id="root"></div>
+    </div>
+    
+    
+    <script>
+     
+        window.currentUser = 'EMP001';
+        window.apiBaseUrl = 'http://localhost:3001/api';
+    </script>
+</body>
+</html>

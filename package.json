@@ -1,0 +1,24 @@
+{
+  "name": "legacy-timesheet-system",
+  "version": "1.0.0",
+  "description": "A legacy timesheet entry system with intentional technical debt",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'Build complete'",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "echo 'Linting skipped'",
+    "typecheck": "echo 'Type checking skipped'"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2"
+  },
+  "keywords": ["timesheet", "legacy", "refactoring", "challenge"],
+  "author": "Code Retreat Challenge"
+}
