@@ -119,14 +119,14 @@ const TimeEntryForm: React.FC<TimeEntryFormProps> = ({ onSubmit, projects, curre
   return (
     <form style={formStyles.form} onSubmit={handleSubmit}>
       <div style={formStyles.field}>
-        <label htmlFor=\"project\">Project *</label>
+        <label htmlFor="project">Project *</label>
         <select 
-          id=\"project\"
+          id="project"
           style={{...formStyles.input, borderColor: errors.projectId ? 'red' : '#ccc'}}
           value={projectId} 
           onChange={(e) => setProjectId(e.target.value)}
         >
-          <option value=\"\">Select a project...</option>
+          <option value="\">Select a project...</option>
           {projects.map(project => (
             <option key={project.id} value={project.id}>
               {project.name} - {project.client}
@@ -137,10 +137,10 @@ const TimeEntryForm: React.FC<TimeEntryFormProps> = ({ onSubmit, projects, curre
       </div>
       
       <div style={formStyles.field}>
-        <label htmlFor=\"startDate\">Start Date *</label>
+        <label htmlFor="startDate">Start Date *</label>
         <input
-          id=\"startDate\"
-          type=\"date\"
+          id="startDate"
+          type="date"
           style={{...formStyles.input, borderColor: errors.startDate ? 'red' : '#ccc'}}
           value={startDate}
           onChange={(e) => setStartDate(e.target.value)}
@@ -149,10 +149,10 @@ const TimeEntryForm: React.FC<TimeEntryFormProps> = ({ onSubmit, projects, curre
       </div>
       
       <div style={formStyles.field}>
-        <label htmlFor=\"startTime\">Start Time *</label>
+        <label htmlFor="startTime">Start Time *</label>
         <input
-          id=\"startTime\"
-          type=\"time\"
+          id="startTime"
+          type="time"
           style={{...formStyles.input, borderColor: errors.startTime ? 'red' : '#ccc'}}
           value={startTime}
           onChange={(e) => setStartTime(e.target.value)}
@@ -161,10 +161,10 @@ const TimeEntryForm: React.FC<TimeEntryFormProps> = ({ onSubmit, projects, curre
       </div>
       
       <div style={formStyles.field}>
-        <label htmlFor=\"endDate\">End Date *</label>
+        <label htmlFor="endDate">End Date *</label>
         <input
-          id=\"endDate\"
-          type=\"date\"
+          id="endDate"
+          type="date"
           style={{...formStyles.input, borderColor: errors.endDate ? 'red' : '#ccc'}}
           value={endDate}
           onChange={(e) => setEndDate(e.target.value)}
@@ -173,10 +173,10 @@ const TimeEntryForm: React.FC<TimeEntryFormProps> = ({ onSubmit, projects, curre
       </div>
       
       <div style={formStyles.field}>
-        <label htmlFor=\"endTime\">End Time *</label>
+        <label htmlFor="endTime">End Time *</label>
         <input
-          id=\"endTime\"
-          type=\"time\"
+          id="endTime"
+          type="time"
           style={{...formStyles.input, borderColor: errors.endTime ? 'red' : '#ccc'}}
           value={endTime}
           onChange={(e) => setEndTime(e.target.value)}
@@ -185,13 +185,13 @@ const TimeEntryForm: React.FC<TimeEntryFormProps> = ({ onSubmit, projects, curre
       </div>
       
       <div style={formStyles.field}>
-        <label htmlFor=\"description\">Description</label>
+        <label htmlFor="description">Description</label>
         <textarea
-          id=\"description\"
+          id="description"
           style={{...formStyles.input, minHeight: '80px', resize: 'vertical'}}
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          placeholder=\"Describe your work...\"
+          placeholder="Describe your work..."
         />
         {errors.description && <span style={formStyles.error}>{errors.description}</span>}
       </div>
@@ -199,7 +199,7 @@ const TimeEntryForm: React.FC<TimeEntryFormProps> = ({ onSubmit, projects, curre
       <div style={formStyles.field}>
         <label>
           <input
-            type=\"checkbox\"
+            type="checkbox"
             checked={isBillable}
             onChange={(e) => setIsBillable(e.target.checked)}
             style={{marginRight: '8px'}}
@@ -209,7 +209,7 @@ const TimeEntryForm: React.FC<TimeEntryFormProps> = ({ onSubmit, projects, curre
       </div>
       
       <div style={{gridColumn: '1 / -1'}}>
-        <button type=\"submit\" style={formStyles.button}>
+        <button type="submit" style={formStyles.button}>
           Add Time Entry
         </button>
       </div>
