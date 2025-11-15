@@ -1,7 +1,7 @@
 import { TimeEntry } from '../models/TimeEntry';
 import { Employee } from '../models/Employee';
 import { Project } from '../models/Project';
-import * as moment from 'moment';
+import moment from 'moment';
 
 export class TimesheetService {
   
