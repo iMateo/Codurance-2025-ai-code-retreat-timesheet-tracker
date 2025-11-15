@@ -1,5 +1,16 @@
 // Simple JavaScript tests for the timesheet system
 // The codebase has poor coverage
+//import TimesheetService from '../src/services/TimesheetService';
+
+import { TimesheetService } from '../src/services/TimesheetService';
+
+describe('TimesheetService', () => {
+  let timesheetService: TimesheetService;
+
+  beforeEach(() => {
+    timesheetService = new TimesheetService();
+  });
+
 
 describe('Timesheet System Tests', () => {
   
